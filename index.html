@@ -25,7 +25,12 @@
       <a href="#puesto">Puesto</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a href="tel:+12094450707" class="btn btn-header">📞 (209) 445-0707</a>
+    <div class="header-right">
+      <a href="tel:+12094450707" class="btn btn-header">📞 (209) 445-0707</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <!-- HERO -->
@@ -194,6 +199,23 @@
     </div>
     <p class="footer-copy">© 2026 Taquizas Los Dos Hermanos — El Catrín. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 
 </body>
 </html>
