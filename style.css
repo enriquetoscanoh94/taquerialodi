@@ -46,13 +46,17 @@ img { display: block; max-width: 100%; }
 }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(200, 16, 46, 0.5), 0 0 40px rgba(232, 40, 64, 0.85); }
 
-/* CTA sobre el fondo rojo del hero: borde claro + glow fuerte para que no se pierda */
+/* CTA principal del hero: AMARILLO para que resalte sobre el fondo rojo y no se pierda */
 .hero .btn-primary {
-  border: 2px solid rgba(255, 255, 255, 0.92);
-  box-shadow: 0 0 26px rgba(255, 60, 80, 0.9), 0 0 55px rgba(255, 60, 80, 0.55), 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: var(--amarillo);
+  color: var(--negro);
+  border: none;
+  box-shadow: 0 0 28px rgba(247, 181, 0, 0.75), 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 .hero .btn-primary:hover {
-  box-shadow: 0 0 34px rgba(255, 60, 80, 1), 0 0 72px rgba(255, 60, 80, 0.75), 0 8px 24px rgba(0, 0, 0, 0.35);
+  background: #ffc72c;
+  transform: translateY(-2px);
+  box-shadow: 0 0 44px rgba(247, 181, 0, 0.95), 0 8px 26px rgba(0, 0, 0, 0.4);
 }
 .btn-ghost { background: transparent; color: #fff; border: 2px solid #fff; }
 .btn-ghost:hover { background: #fff; color: var(--negro); }
