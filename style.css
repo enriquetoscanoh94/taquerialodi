@@ -185,6 +185,10 @@ img { display: block; max-width: 100%; }
 
 /* ===== MENU ===== */
 .menu { padding: 90px 6%; background: #fff; }
+.guisados { background: var(--crema); }
+.guisados .menu-card { background: #fff; }
+.guisados-promo { max-width: 500px; margin: 0 auto 44px; }
+.guisados-promo img { width: 100%; border-radius: 18px; border: 5px solid var(--amarillo); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18); }
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -295,7 +299,7 @@ img { display: block; max-width: 100%; }
     overflow: hidden;
     transition: max-height 0.35s ease;
   }
-  .nav.open { max-height: 340px; }
+  .nav.open { max-height: 400px; }
   .nav a {
     padding: 16px 6%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
